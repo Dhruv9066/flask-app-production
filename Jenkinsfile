@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Setup') {
             steps {
-                sh " sudo pip install --break-system-packages -r requirements.txt"
+                sh " sudo pip install  --ignore-installed  --break-system-packages -r requirements.txt"
             }
         }
         stage('Test') {
