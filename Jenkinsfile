@@ -33,7 +33,7 @@ pipeline {
                       # source app/venv/bin/activate
                         cd /home/ubuntu/app/
                         pip install  --ignore-installed  --break-system-packages -r requirements.txt
-                        sudo systemctl restart flaskapp.service
+                        sudo systemctl restart flask-app.service
 EOF
                     '''
                 }
